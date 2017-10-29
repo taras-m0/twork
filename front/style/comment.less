@@ -1,0 +1,54 @@
+.comment {
+  text-align: center;
+  margin: 0 1em 2em;
+
+  overflow: hidden;
+  font-family: Roboto-Medium;
+
+  background-color: #eaedf2;
+
+  height: 290px;
+
+  h3 {
+    background-color: #50596b;
+    color: white;
+
+    padding: .7em;
+    font-size: 26px;
+    margin: 0;
+
+  }
+
+  p {
+    font-family: Roboto-Medium;
+    font-size: 22px;
+    color: #6d737b;
+    padding: .7em;
+
+    &.email {
+      font-family: Roboto-Bold;
+      font-size: 24px;
+    }
+  }
+}
+
+/* Чётные другим цветом */
+.comment-wrap {
+  div:nth-of-type(even){
+    .comment {
+      background-color: #e3ebdf;
+
+      h3 {
+        background-color: #78ab59;
+      }
+
+      p {
+        font-family: Roboto-Regular;
+        &.email {
+          color: #78ab59;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

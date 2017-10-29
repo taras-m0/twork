@@ -1,0 +1,8 @@
+doctrine_mysql:
+    connections:
+        server: mysql.dev
+        database: clients
+        user: root
+        password: root
+        options: {}
+    database: users

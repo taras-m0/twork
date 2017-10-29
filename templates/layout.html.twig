@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тестовое задание</title>
+
+  {% block css %}
+  <!-- Bootstrap -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/app-comment.bundle.min.css" rel="stylesheet">
+  {% endblock %}
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body role="document">
+<header class="header container-fluid">
+  <img src="/img/logo.png" alt="HoneyHunters" class="logo" />
+
+  {% block header %}
+  {% endblock %}
+</header>
+
+<section class="container-fluid">
+  {% block content %}
+  {% endblock %}
+</section>
+
+
+<footer class="footer container-fluid">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-0 col-sm-offset-1">
+      <img src="/img/logo.png" alt="HoneyHunters" class="logo pull-left" />
+
+      <span class="soc-icon fa-vk pull-right"></span>
+      <span class="soc-icon fa-facebook pull-right"></span>
+    </div>
+  </div>
+</footer>
+
+{% block javascript %}
+<script src="/js/vendor.bundle.js"></script>
+<script src="/js/app-comment.bundle.js"></script>
+{% endblock %}
+</body>
+</html>

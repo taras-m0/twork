@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+
+{% block javascript %}
+    <script type="text/javascript">
+        window.commentsData = {{ comments|json_encode|raw }};
+    </script>
+    {{ parent() }}
+{% endblock %}
+
+{% block header %}
+<form role="form">
+    <div class="row" id="form-app">
+    </div>
+</form>
+{% endblock %}
+
+{% block content %}
+<h2 class="text-center row">Выводим комментарии</h2>
+
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0 comment-wrap" id="comment-app">
+    </div>
+</div>
+{% endblock %}

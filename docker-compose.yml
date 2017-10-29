@@ -1,0 +1,21 @@
+silexmysql:
+    build: "./docker/"
+    ports:
+        - "80:80"
+    volumes:
+        - ./docker/web.conf:/etc/nginx/sites-available/default
+        - ./:/project
+    environment:
+        - VIRTUAL_HOST=silex-mysql.dev
+    links:
+        - mysql:mysql.dev
+
+mysql:
+    image: mysql:latest
+    ports:
+        - "3306:3306"
+    volumes:
+        - ./:/project
+    environment:
+        - VIRTUAL_HOST:mysql.dev
+        - MYSQL_ROOT_PASSWORD=root

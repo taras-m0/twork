@@ -1,0 +1,59 @@
+/* Sticky footer styles */
+@footer-height: 70px;
+html {
+  position: relative;
+  min-height: 100%;
+  height: auto;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: @footer-height;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: @footer-height;
+  background-color: #2f3136;
+}
+/* /Sticky footer styles */
+
+.header {
+  background-color: #33363a;
+  background-image: url("/img/logo_icon.png");
+  background-repeat: no-repeat;
+  background-position: center 120px;
+  background-size: 200px auto;
+  position: relative;
+  padding-top: 320px;
+  padding-bottom: 50px;
+  color: #d6d6d6;
+  font-size: 20px;
+
+
+  .logo {
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    max-width: 60%;
+    margin-left: 20%;
+  }
+}
+
+section {
+  padding-top: 40px;
+
+  h2 {
+    margin-bottom: 2em;
+  }
+}
+
+.footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  .logo {
+    width: 200px;
+  }
+}

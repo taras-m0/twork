@@ -1,0 +1,32 @@
+.form-control {
+  background-color: transparent;
+  padding: .5em 1em;
+  height: auto;
+  color: #aaaaaa;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.btn {
+  padding: .5em 1em;
+}
+
+.form-group.require{
+  label {
+    &:after{
+      display: inline-block;
+      content: '*';
+      color: red;
+      vertical-align: top;
+      font-size: .9em;
+      padding-left: .5em;
+    }
+  }
+}
+
+textarea.form-control {
+  height: 9em;
+}
+

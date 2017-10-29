@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тестовое задание</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app-comment.bundle.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body role="document">
+    <header class="header container-fluid">
+        <img src="/img/logo.png" alt="HoneyHunters" class="logo" />
+
+        <form role="form">
+            <div class="row" id="form-app">
+                <div class="col-md-5 col-xs-offset-1 col-xs-10">
+                    <div class="form-group require">
+                        <label for="name">Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder=""/>
+                    </div>
+
+                    <div class="form-group require has-error">
+                        <label for="email">E-Mail</label>
+                        <input type="email" class="form-control" id="email" placeholder=""/>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-xs-10 col-xs-offset-1 col-md-offset-0">
+                    <div class="form-group require">
+                        <label for="comment">Email</label>
+                        <textarea class="form-control" id="comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-xs-10 col-xs-offset-1">
+                    <button type="submit" class="btn btn-danger pull-right">Записать</button>
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <section class="container-fluid">
+        <h2 class="text-center row">Выводим комментарии</h2>
+
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0 comment-wrap" id="comment-app">
+                <div class="col-md-4 col-sm-6">
+                    <div class="comment">
+                        <h3 class="">Вася</h3>
+                        <p class="email">vasya@mail.ru</p>
+                        <p>Сообщение от Василия Пупкина.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="comment">
+                        <h3 class="">Маруся</h3>
+                        <p class="email">marysia@mail.ru</p>
+                        <p>Всем привет,
+                            я Маруся</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="comment">
+                        <h3 class="">Маруся</h3>
+                        <p class="email">marysia@mail.ru</p>
+                        <p>Всем привет,
+                            я Маруся</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-0 col-sm-offset-1">
+                <img src="/img/logo.png" alt="HoneyHunters" class="logo pull-left" />
+
+                <span class="soc-icon fa-vk pull-right"></span>
+                <span class="soc-icon fa-facebook pull-right"></span>
+            </div>
+        </div>
+
+    </footer>
+<div id="comments-app"></div>
+
+    <script type="text/javascript">
+        window.commentsData = [{"id":"1","name":"gfrty","email":"dfgt@fhgj","comment":"lkjlkjhkjbkjbjbjb\r\nkbkjbkjbk"},{"id":"2","name":"sdgdag","email":"sgsdagsad","comment":""},{"id":"3","name":"fSDFDSF","email":"SDFSF","comment":""},{"id":"4","name":"11","email":"222","comment":"3333"}];
+    </script>
+<script src="/js/vendor.bundle.js"></script>
+<script src="/js/app-comment.bundle.js"></script>
+</body>
+</html>

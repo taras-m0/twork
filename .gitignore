@@ -1,0 +1,5 @@
+vendor/
+tmp/
+build/
+node_modules/
+.idea/
